@@ -39,7 +39,7 @@ function search_possible(){
     q = document.getElementById("inp_possible");
     q = q.value;
     
-fetch(`http://api.tvmaze.com/search/shows?q=${q}`).then(response => response.json())
+fetch(`https://api.tvmaze.com/search/shows?q=${q}`).then(response => response.json())
 .then(data => {
     //console.log(data[0])
     
@@ -76,7 +76,7 @@ fetch(`http://api.tvmaze.com/search/shows?q=${q}`).then(response => response.jso
 function search_exact(){
     q = document.getElementById("inp_exact");
 q = q.value;
-fetch(`http://api.tvmaze.com/singlesearch/shows?q=${q}`)
+fetch(`https://api.tvmaze.com/singlesearch/shows?q=${q}`)
 .then(response => response.json())
 .then(data =>{
     
